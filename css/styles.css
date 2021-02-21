@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --DarkBlueButtons: #1c2431;
+  --DarkBlueMain: #181f2a;
+  --DarkBlueFooter: #0b1523;
+  --DarkBlueCards: #202a3c;
+  --Cyan: #65e2d9;
+  --Blue: #339ecc;
+  --LightRed: #ff4242;
+}
+//body type:
+// font-family: 'Open Sans', sans-serif;
+
+//  Headings, Call-to-actions, Header Navigation
+//   font-family: 'Raleway', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background-color: var(--DarkBlueMain);
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+#container {
+  margin: 60px 20px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 4px 4px 14px #aaa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo {
+  padding: 10px;
+  width: 50%;
+}
+.illustration {
+  margin-top: 80px;
+  width: 80%;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+p {
+  font-size: 0.85em;
+}
+.btn {
+  padding: 15px;
+  background-color: var(--Blue);
+  border-radius: 50px;
+  outline: none;
+  // width: 80%;
+  // }
+  // button {
+  font-size: 1.95em;
+}
+.btn-white {
+  padding: 14px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.stayProductive {
+  text-align: left;
+  padding-bottom: 150px;
+}
+h4 {
+  color: var(--Cyan);
+  font-size: 0.5em;
+  text-decoration: underline;
+  text-decoration-color: var(--Cyan);
+}
+.quotes {
+  display: block;
+}
+.cards {
+  font-size: 0.86em;
+  height: 200px;
+  text-align: left;
+}
+.card-profiles {
+  background-color: var(--DarkBlueCards);
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.card_profile-team {
+  display: flex;
+  gap: 13px;
+}
+
+.card_profile-pic {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+.card_profile_text {
+  font-size: 0.85em;
+  // margin-bottom: 33px;
+}
+.large-logo {
+  margin-top: 50px;
+}
+.card_call-to-action {
+  margin-top: 150px;
+  background-color: var(--DarkBlueCards);
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+.section_right {
+  margin-left: 40px;
+}
+.contact-icon {
+  padding-right: 20px;
+}
