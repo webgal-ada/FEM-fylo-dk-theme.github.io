@@ -22,17 +22,19 @@
   padding: 0;
 }
 body {
-  background-color: darkslategrey;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   margin: 0 auto;
   text-align: center;
 }
-
+.wrapper {
+  background-color: var(--DarkBlueButtons);
+}
 header {
+  background-color: var(--);
   position: fixed;
   top: 0;
-  margin: 0 auto;
+  // margin: 0 auto;
   width: 100vw;
 }
 .navbar {
@@ -74,7 +76,8 @@ li:first-child {
   padding-bottom: 25px;
   width: 100vw;
 }
-.curvyMobile img {
+img .curvyMobile {
+  outline: 2px dotted red;
   width: 100vw;
   position: relative;
   margin-top: -20px;
@@ -88,29 +91,44 @@ li:first-child {
   margin-left: auto;
   margin-right: auto;
 }
-/* ==============================*/
-/* buttons */
+.container_topsection-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin: 16px 25px auto 25px;
+}
+.container_topsection-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85em;
+  font-weight: 200;
+  line-height: 1.35em;
 
-button {
-  outline: none;
+  margin: 10px 27px;
+}
+/* ============ buttons ==================*/
+
+#btn {
   background-color: var(--Blue);
   border-radius: 50px;
-  font-size: 1.95em;
   color: #fff;
+  font-size: 1.25em;
+  margin: 0 auto;
   width: 250px;
 }
-
 /* white button*/
-.btn-white {
+#btn-white {
   background-color: #fff;
   border-radius: 50px;
+  font-size: 1em;
+  margin: 0 auto;
+  width: 250px;
 }
 
 /*========cute icons=======midsection-grid =====*/
 
-.container_midsection-grid div {
+.container_midsection-grid {
   display: block;
-  margin-top: 120px;
+  margin-top: 110px;
 }
 .flx {
   padding: 20px;
@@ -120,8 +138,8 @@ button {
 .container_midsection-illustration-and-text {
   background-size: 60% 40%;
 }
-/* ==============Stay productive================*/
-.container_midsection-StayProd {
+/* ====================Stay productive===========*/
+.midsection-StayProd {
   padding-top: 55px;
 }
 #stayProductive-text {
@@ -138,11 +156,7 @@ button {
 .illustration-2 {
   width: 90%;
 }
-h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.3em;
-  line-height: 1.4em;
-}
+
 p {
   font-size: 0.85em;
 }
@@ -154,11 +168,11 @@ h4 {
   text-decoration-color: var(--Cyan);
   -webkit-text-decoration-color: #65e2d9; /* Safari */
 }
-/* =================cards============*/
+/* =================quotes============*/
 
 .quotes {
   display: block;
-  padding: 50px 0 0 25px;
+  padding: 115px 0 0 30px;
 }
 /* =================cards============*/
 .cards {
@@ -173,20 +187,25 @@ h4 {
   padding: 15px;
   margin-bottom: 20px;
 }
+.card_profile_text {
+  font-size: 0.85em;
+  margin-top: 25px;
+}
 .card_profile-team {
   display: flex;
   gap: 13px;
 }
-
 .card_profile-pic {
   border-radius: 50px;
   width: 50px;
   height: 50px;
 }
-.card_profile_text {
+.card_profile-credits strong {
   font-size: 0.85em;
-  margin-top: 50px;
-  text-align: center;
+}
+.card_profile-credits h3 {
+  font-size: 0.85em;
+  font-weight: 200;
 }
 /* =====================call to action=========*/
 .backgroundColorMain {
@@ -201,45 +220,42 @@ h4 {
 .card_call-to-action-text {
   padding: 20px;
 }
-/* =====================Section=========*/
-section {
+/* ==================DkFooterArea============*/
+
+.dkFooterArea_large-logo {
+  padding-top: 45px;
+  margin-left: 25px;
+  text-align: left;
+}
+.darkFooterArea {
+  background-color: var(--DarkBlueFooter);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+.main-list {
+  width: 320px;
+  margin-left: 25px;
   text-align: left;
+  font-size: 0.85em;
 }
 .contact-location {
-  width: 350px;
-  margin: 0 auto;
-}
-
-.section_right {
-  margin-left: 40px;
-  text-align: left;
+  margin-bottom: 10px;
 }
 .contact-icon {
   padding-right: 20px;
 }
-/* =====================footer=========*/
-.darkFooterArea {
-  background-color: var(--DarkBlueFooter);
-}
-.dkFooterArea_large-logo {
-  padding-top: 45px;
-  margin-left: 25px;
-}
+
 .about-list ul {
   line-height: 2em;
   margin-left: 36px;
   list-style-type: none;
-}
-@media screen and (min-width: 480px) {
-  /* #stayProductive-text {
-  padding: 30px;
-} */
+  text-align: left;
 }
 
-@media screen and (min-width: 860px) {
+/* ==================Media Query============*/
+/* =============================*/
+
+@media screen and (min-width: 560px) {
   .container_midsection-grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -255,8 +271,5 @@ section {
   .container_midsection-StayProd {
     display: flex;
     padding: 20px;
-  }
-  .container_midsection-StayProd {
-    display: flex;
   }
 }
