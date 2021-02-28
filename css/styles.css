@@ -145,6 +145,7 @@ img .curvyMobile {
 #stayProductive-text {
   text-align: left;
   padding: 0 25px 0 25px;
+  font-weight: 200;
 }
 
 /* ==============Illustrstions================*/
@@ -176,7 +177,6 @@ h4 {
 }
 /* =================cards============*/
 .cards {
-  font-size: 0.86em;
   width: 90%;
   margin: 0 auto;
   text-align: left;
@@ -184,12 +184,14 @@ h4 {
 .card-profiles {
   background-color: var(--DarkBlueCards);
   border-radius: 16px;
+  font-size: 0.85em;
   padding: 15px;
+  word-spacing: 0.15em;
   margin-bottom: 20px;
+  line-height: 1.5em;
 }
 .card_profile_text {
-  font-size: 0.85em;
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .card_profile-team {
   display: flex;
@@ -200,12 +202,14 @@ h4 {
   width: 50px;
   height: 50px;
 }
-.card_profile-credits strong {
+.card_profile-credits {
   font-size: 0.85em;
+  margin-top: 10px;
+  line-height: 1.25em;
 }
-.card_profile-credits h3 {
-  font-size: 0.85em;
+.card_profile-credits h5 {
   font-weight: 200;
+  margin-top: 3px;
 }
 /* =====================call to action=========*/
 .backgroundColorMain {
@@ -260,16 +264,33 @@ h4 {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     max-width: 1000px;
+    margin: 50px auto;
   }
   /* Illustration-2 */
 
   .illustration-2 {
     width: 100%;
   }
-  .container_midsection-StayProd {
+  .midsection-StayProd {
+    align-items: center;
     display: flex;
-    padding: 20px;
+    margin: 0 auto;
+
+    width: 1000px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    max-width: 1000px;
+  }
+  .card_call-to-action {
+    width: 50%;
+  }
+
+  .darkFooterArea {
   }
 }
