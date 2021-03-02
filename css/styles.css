@@ -16,7 +16,6 @@
   Headings, Call-to-actions, Header Navigation
   font-family: 'Raleway', sans-serif;
 */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -44,7 +43,6 @@ header {
   grid-gap: 20px;
   margin: 0 20px 0 20px;
 }
-
 .nav-logo {
   display: grid;
   align-content: center;
@@ -67,7 +65,6 @@ header {
 li:first-child {
   flex-grow: 4;
 }
-/*top section*/
 /* =============top section*=================*/
 .container_topsection {
   display: inline-block;
@@ -102,37 +99,48 @@ img.curvyMobile {
   font-size: 0.85em;
   font-weight: 200;
   line-height: 1.35em;
-
   margin: 10px 27px;
 }
 /* ============ buttons ==================*/
-
-#btn {
+.myButton {
   background-color: var(--Blue);
   border-radius: 50px;
-  margin: 0 auto;
-  padding: 7px;
-  width: 250px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 21px;
+  padding: 15px 31px;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
-button {
-  background-color: transparent;
-  outline: none;
-  font-size: 24px;
-  color: #fff;
+.myButton:hover {
+  background-color: #5cbf2a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 /* white button*/
-div#btn-white {
+#btn-white {
   background-color: #fff;
-  border-radius: 50px;
-  font-size: 1em;
-  margin: 0 auto;
-  width: 250px;
-  padding: 7px;
-  color: var(--DarkBlueMain);
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
 }
-
+#btn-white:hover {
+  background-color: #5cbf2a;
+}
+#btn-white:active {
+  position: relative;
+  top: 1px;
+}
 /*========cute icons=======midsection-grid =====*/
-
 .container_midsection-grid {
   display: block;
   margin-top: 110px;
@@ -141,7 +149,6 @@ div#btn-white {
   padding: 20px;
   text-align: center;
 }
-
 .container_midsection-illustration-and-text {
   background-size: 60% 40%;
 }
@@ -154,7 +161,6 @@ div#btn-white {
   padding: 0 25px 0 25px;
   font-weight: 200;
 }
-
 /* ==============Illustrstions================*/
 .illustration {
   background-color: var(--DarkBlueButtons);
@@ -164,11 +170,9 @@ div#btn-white {
 .illustration-2 {
   width: 90%;
 }
-
 p {
   font-size: 0.85em;
 }
-
 h4 {
   color: var(--Cyan);
   font-size: 0.5em;
@@ -177,7 +181,6 @@ h4 {
   -webkit-text-decoration-color: #65e2d9; /* Safari */
 }
 /* =================quotes============*/
-
 .quotes {
   display: block;
   padding: 115px 0 0 30px;
@@ -225,23 +228,22 @@ h4 {
 .card_call-to-action {
   background-color: var(--DarkBlueCards);
   border-radius: 16px;
-  margin: 150px auto 25px auto;
-  width: 90%;
+  margin: 90px auto -90px;
+  position: relative;
 }
 .card_call-to-action-text {
   padding: 20px;
 }
 /* ==================DkFooterArea============*/
-
 .dkFooterArea_large-logo {
-  padding-top: 45px;
+  padding-top: 140px;
   margin-left: 25px;
   text-align: left;
 }
 .darkFooterArea {
   background-color: var(--DarkBlueFooter);
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 .main-list {
   width: 320px;
@@ -255,17 +257,13 @@ h4 {
 .contact-icon {
   padding-right: 20px;
 }
-
 .about-list ul {
   line-height: 2em;
   margin-left: 36px;
   list-style-type: none;
   text-align: left;
 }
-
 /* ==================Media Query============*/
-/* =============================*/
-
 @media screen and (min-width: 560px) {
   .container_midsection-grid {
     display: grid;
@@ -279,9 +277,7 @@ h4 {
   .illustration {
     width: min(90%, 600px);
   }
-
   /* Illustration-2 */
-
   .illustration-2 {
     width: 100%;
   }
@@ -289,7 +285,6 @@ h4 {
     align-items: center;
     display: flex;
     margin: 0 auto;
-
     width: 1000px;
   }
   .cards {
@@ -301,7 +296,6 @@ h4 {
   .card_call-to-action {
     width: 50%;
   }
-
   .darkFooterArea {
     display: grid;
   }
