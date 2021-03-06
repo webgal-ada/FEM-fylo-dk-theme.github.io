@@ -297,6 +297,6 @@ h4 {
     width: 50%;
   }
   .darkFooterArea {
-    display: grid;
+    display: flex;
   }
 }
